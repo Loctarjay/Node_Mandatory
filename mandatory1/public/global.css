@@ -33,12 +33,11 @@ table, th, td {
     text-indent: 50px;
 }
 .demo-text{
-    text-indent: 100px;
+    text-indent: 75px;
 }
 .button-ul {
     list-style-type: none;
-    margin-left: 100px;
-    margin-right: 580px;
+    margin-left: 75px;
     padding: 0;
     overflow: hidden;
 }

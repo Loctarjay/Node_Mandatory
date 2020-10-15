@@ -25,6 +25,9 @@ app.get("/functions", (req, res) => {
     return res.sendFile(__dirname + "/public/functions/functions.html");
 });
 
+app.get("/snippets", (req, res) => {
+    return res.sendFile(__dirname + "/public/snippets/snippets.html");
+});
 
 
 

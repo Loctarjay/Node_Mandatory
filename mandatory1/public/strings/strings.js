@@ -10,8 +10,8 @@ function addNumber(){
 
 // --------------------------------------
 // Grab Index
-function getIndex(x){
-    const demo = document.getElementById("demo-text").innerHTML.charAt(x);
+function getIndex(){
+    const demo = document.getElementById("demo-text").innerHTML.charAt(5);
     document.getElementById("changed-text").innerHTML = demo;
 }
 
