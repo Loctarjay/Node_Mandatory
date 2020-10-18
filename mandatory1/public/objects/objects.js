@@ -12,13 +12,16 @@ function retrieve(){
 
 // remove key = firstname
 function pop(){
-    delete json.firstname;
+    const tempRemove = Object.keys(json)[Object.keys(json).length-1];
+    delete json[tempRemove];
+    console.log(json);
     document.getElementById("changed-text").innerHTML = JSON.stringify(json);
 }
 
 // Change Lastname
 function changeLast(){
+    console.log(json);
     json.lastname = "Lund-Pedersen";
-    document.getElementById("changed-text").innerHTML = JSON.stringify(json);
+    document.getElementById("changed-text").innerHTML = JSON.stringify(json.lastname);
 }
 

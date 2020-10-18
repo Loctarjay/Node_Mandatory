@@ -11,11 +11,27 @@ function arrPop(){
 
 // find the chosen index - current 2
 function chooseIndex(){
-    document.getElementById("changed-text").innerHTML = array[2];
+    let tempInput = null;
+    const input = document.getElementById("input-field").value;
+    console.log(Number(input));
+    if (Number(input)) {
+        tempInput = array.indexOf(Number(input));
+    } else {
+         tempInput = array.indexOf(input);
+    }
+        console.log(tempInput);
+    document.getElementById("changed-text").innerHTML = array.indexOf(tempInput);
+    console.log(array);
 }
 
 // push to array
 function arrPush(){
-    array.push("Bente");
+    const pushInput = document.getElementById("input-field").value;
+    if (Number(pushInput)) {
+        array.push(Number(pushInput));
+    } else{
+        array.push(pushInput);
+    }
     document.getElementById("changed-text").innerHTML = array;
+    console.log(array);
 }
